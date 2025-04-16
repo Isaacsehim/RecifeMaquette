@@ -8,10 +8,8 @@
 	--purple: #A463BF;
 	--orange: #FF8552;
 	--text-primary: #0D0D0D;
-	--text-secondary: #7C7C7C;
-	--white: #fff;
-	--light-gray: #f9f9f9;
-	--dark-gray: #222;
+	--text-secondary: #555555;
+	--light-gray: #fBfBfB;
 }
 
 /* ===================== */
@@ -26,7 +24,7 @@
 body {
 	font-family: 'Inter', sans-serif;
 	color: var(--text-primary);
-	background-color: var(--white);
+	background-color: var(--light-gray);
 }
 
 div.logo {
@@ -46,6 +44,10 @@ h3 {
 	font-weight: 700;
 }
 
+h3 + p {
+	margin-top: 1rem;
+}
+
 p,
 .subtitle {
 	font-family: 'Be Vietnam Pro', sans-serif;
@@ -59,7 +61,7 @@ p,
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background-color: var(--white);
+	background-color: var(--light-gray);
 	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2),
 		inset 0 1px 0 rgba(0, 0, 0, 0.1);
 	padding: 5rem 5%;
@@ -137,19 +139,19 @@ p,
 
 .btn-search {
 	background-color: var(--primary-gray);
-	color: var(--white);
+	color: var(--light-gray);
 	border: none;
 }
 
 .btn-contact {
 	background-color: var(--primary-blue);
-	color: var(--white);
+	color: var(--light-gray);
 	border: none;
 }
 
 .btn-translate {
-	background-color: var(--white);
-	border: 1px solid #e0e0e0;
+	background-color: var(--light-gray);
+	border: 1px solid var(--light-gray);
 	color: var(--text-primary);
 
 }
@@ -183,7 +185,7 @@ p,
 	background: linear-gradient(135deg, var(--primary-blue), var(--primary-gray), var(--turquoise), var(--purple), var(--orange));
 	background-size: 400% 400%;
 	animation: backgroundMove 10s infinite linear;
-	color: var(--white);
+	color: var(--light-gray);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -191,6 +193,7 @@ p,
 	text-align: center;
 	position: relative;
 	overflow: hidden;
+	border-radius: 0 0 2rem 2rem;
 }
 
 .hero::before {
@@ -201,7 +204,7 @@ p,
 	background-size: cover;
 	background-position: center;
 	transform: scale(1);
-	/* Dézoom de la photo */
+	border-radius: 0 0 2rem 2rem;
 	opacity: 0.5;
 	pointer-events: none;
 }
@@ -229,7 +232,7 @@ p,
 
 .btn-primary {
 	display: inline-block;
-	background-color: var(--white);
+	background-color: var(--light-gray);
 	color: var(--primary-blue);
 	font-weight: 600;
 	padding: 0.75rem 1.5rem;
@@ -239,8 +242,8 @@ p,
 
 .btn-secondary {
 	background-color: transparent;
-	color: var(--white);
-	border: 2px solid white;
+	color: var(--light-gray);
+	border: 2px solid var(--light-gray);
 	padding: 0.75rem 1.5rem;
 	font-weight: 600;
 	font-size: 1rem;
@@ -260,6 +263,28 @@ p,
 	}
 }
 
+.fleche {
+	font-size: 3rem;
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fleche:hover {
+	cursor: pointer;
+	animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(10px);
+	}
+}
+
 /* ===================== */
 /*        FEATURES       */
 /* ===================== */
@@ -271,7 +296,7 @@ p,
 }
 
 .feature-card {
-	background: white;
+	background: var(--light-gray);
 	border-radius: 8px;
 	padding: 2rem;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -279,19 +304,22 @@ p,
 }
 
 .feature-card:hover {
-	transform: translateY(-10px);
+	transform: translateY(-10px) scale(0.95);
 }
 
 .feature-card.purple {
 	border-top: 4px solid var(--purple);
+	border-bottom: solid 4px var(--purple);
 }
 
 .feature-card.orange {
 	border-top: 4px solid var(--orange);
+	border-bottom: solid 4px var(--orange);
 }
 
 .feature-card.turquoise {
 	border-top: 4px solid var(--turquoise);
+	border-bottom: solid 4px var(--turquoise);
 }
 
 .feature-icon {
@@ -315,7 +343,6 @@ p,
 
 .section-header h2 {
 	font-size: 2.5rem;
-	color: var(--primary-blue);
 	margin-bottom: 1rem;
 }
 
@@ -328,15 +355,14 @@ p,
 
 .formation-card,
 .certification-card {
-	background: white;
+	background: var(--light-gray);
 	border-radius: 8px;
 	overflow: hidden;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 	transition: transform 0.3s;
 }
 
-.formation-card:hover,
-.certification-card:hover {
+.formation-card:hover {
 	transform: translateY(-5px);
 }
 
@@ -374,6 +400,25 @@ p,
 	padding: 1.5rem;
 }
 
+.formations .section-header h2.formations-langues {
+	color: var(--turquoise);
+}
+
+#formation-1 i {
+	color: var(--turquoise);
+	font-size: 4.5rem;
+}
+
+#formation-2 i {
+	color: var(--turquoise);
+	font-size: 4.5rem;
+}
+
+#formation-3 i {
+	color: var(--turquoise);
+	font-size: 4.5rem;
+}
+
 .btn-outline {
 	margin-top: 1rem;
 	display: inline-block;
@@ -387,28 +432,34 @@ p,
 }
 
 .btn-outline:hover {
-	background: var(--primary-blue);
-	color: white;
+	background: var(--turquoise);
+	color: var(--light-gray);
 }
 
+
+/* ===================== */
+/*          CTA          */
+/* ===================== */
 .certification-card {
-	border-left: 4px solid var(--primary-blue);
+	border-left: 4px solid var(--purple);
+	border-right: 4px solid var(--purple);
 	padding: 2rem;
 }
 
 .certification-icon {
 	font-size: 2.5rem;
 	margin-bottom: 1rem;
-	color: var(--primary-blue);
+	color: var(--purple);
 }
 
-/* ===================== */
-/*          CTA          */
-/* ===================== */
+.certification-section h2.certifications {
+	color: var(--purple);
+}
+
 .cta {
 	padding: 5rem 10%;
 	background-color: var(--primary-blue);
-	color: white;
+	color: var(--light-gray);
 	text-align: center;
 	border-radius: 2rem 2rem 0 0;
 }
@@ -417,6 +468,10 @@ p,
 	max-width: 700px;
 	margin: 1rem auto 2rem auto;
 	color: rgba(255, 255, 255, 0.9);
+}
+
+.certification-card:hover {
+	transform: translateY(-5px) scale(1.05);
 }
 
 /* ===================== */
@@ -438,12 +493,14 @@ p,
 .partner-logo {
 	width: 150px;
 	height: 80px;
-	background-color: #f0f0f0;
+	color: var(--light-gray);
+	background-color: var(--text-secondary);
 	border-radius: 8px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	transition: transform 0.3s;
+	border-bottom: 4px solid var(--orange);
 }
 
 .partner-logo:hover {
@@ -451,12 +508,22 @@ p,
 	transform: translateY(-5px);
 }
 
+.partners h2.partenaires {
+	color: var(--orange);
+}
+
+.partners p.subtitle {
+	color: var(--text-secondary);
+}
+
+
+
 /* ===================== */
 /*         FOOTER        */
 /* ===================== */
 footer {
-	background-color: var(--dark-gray);
-	color: white;
+	background-color: var(--text-primary);
+	color: var(--light-gray);
 	padding: 3rem 10%;
 
 }
@@ -500,7 +567,7 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: white;
+	color: var(--light-gray);
 	transition: all 0.3s;
 	text-decoration: none;
 }
@@ -525,9 +592,9 @@ footer {
 
 #scrollToTop {
 	display: inline-block;
-	background-color: #333;
-	color: white;
-	padding: 12px 16px;
+	background-color: var(--text-secondary);
+	color: var(--light-gray);
+	padding: 10px 10px;
 	border-radius: 20%;
 	font-size: 18px;
 	text-decoration: none;
@@ -535,8 +602,12 @@ footer {
 }
 
 #scrollToTop:hover {
-	background-color: #FF8552;
+	background-color: var(--orange);
 	transform: translateY(-5px);
+}
+
+footer .footer-column p {
+	color: var(--light-gray);
 }
 
 /* ===================== */
@@ -959,12 +1030,12 @@ footer {
 		width: 100%;
 		text-align: left;
 		padding: 0.8rem;
-		border-bottom: 1px solid #eee;
+		border-bottom: 4px solid var(--light-gray);
 	}
 
 	body.dark-mode .navbar.expanded .nav-links a,
 	body.dark-mode .navbar.expanded .btn {
-		border-bottom: 1px solid #333;
+		border-bottom: 1px solid var(--text-secondary);
 	}
 }
 
@@ -984,9 +1055,21 @@ footer {
 /*       DARK MODE       */
 /* ===================== */
 body.dark-mode {
-	background-color: #121212;
-	color: #f0f0f0;
+	background-color: var(--text-primary);
+	color: var(--light-gray);
 }
+body.dark-mode div.logo img {
+	content: url('./img/Logo\ Recife\ BlancBleu.webp');
+}
+
+body.dark-mode ul.nav-links a {
+	color: var(--light-gray);
+}
+
+body.dark-mode ul.nav-links a:hover {
+	color: var(--primary-gray);
+}
+
 
 body.dark-mode .navbar,
 body.dark-mode footer,
@@ -994,14 +1077,13 @@ body.dark-mode .formation-card,
 body.dark-mode .certification-card,
 body.dark-mode .feature-card,
 body.dark-mode .partner-logo,
-body.dark-mode .cta,
 body.dark-mode .formation-img {
-	background-color: #1e1e1e;
-	color: #f0f0f0;
+	background-color: var(--text-primary);
+	color: var(--light-gray);
 }
 
 body.dark-mode .hero {
-	color: white;
+	color: var(--light-gray);
 }
 
 body.dark-mode .hero::before {
@@ -1009,9 +1091,55 @@ body.dark-mode .hero::before {
 }
 
 body.dark-mode .floating-buttons .btn {
-	background-color: #2e2e2e;
-	color: #f0f0f0;
-	border: 1px solid #444;
+	background-color: var(--text-primary);
+	color: var(--light-gray);
+	border: 1px solid var(--text-secondary);
+}
+
+body .feature-card {
+	box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+}
+
+body.dark-mode .formations .formation-card {
+	box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+}
+
+body.dark-mode .formations {
+	background-color: var(--text-primary);
+	color: var(--light-gray);
+}
+
+body.dark-mode .certification-card{
+	box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+}
+
+body.dark-mode .certification-section {
+	background-color: var(--text-primary);
+	color: var(--light-gray);
+}
+
+body.dark-mode .formations .section-header .subtitle {
+	color: var(--light-gray);
+}
+
+body.dark-mode .formation-card p {
+	color: var(--light-gray);
+}
+
+body.dark-mode .certification-section .section-header .subtitle {
+	color: var(--light-gray);
+}
+
+body.dark-mode .certification-card p {
+	color: var(--light-gray);
+}
+
+body.dark-mode .partners p {
+	color: var(--light-gray);
+}
+
+body.dark-mode .partner-logo {
+	background-color: var(--text-secondary);
 }
 
 body.dark-mode .btn,
@@ -1019,19 +1147,27 @@ body.dark-mode .btn-outline,
 body.dark-mode .btn-contact,
 body.dark-mode .btn-search,
 body.dark-mode .btn-translate {
-	background-color: #2e2e2e;
-	color: #f0f0f0;
+	background-color: var(--text-primary);
+	color: var(--light-gray);
 	border: 1px solid;
+}
+
+body.dark-mode .feature-card p {
+	color: var(--light-gray);
+}
+
+.formation-card {
+	border-bottom: solid 4px var(--turquoise);
 }
 
 body.dark-mode .btn:hover,
 body.dark-mode .btn-outline:hover {
-	background-color: #444;
-	color: white;
+	background-color: var(--text-secondary);
+	color: var(--light-gray);
 }
 
 body.dark-mode .footer-links a {
-	color: #ccc;
+	color: var(--light-gray);
 }
 
 body.dark-mode .footer-links a:hover {
@@ -1039,7 +1175,7 @@ body.dark-mode .footer-links a:hover {
 }
 
 body.dark-mode .social-icon {
-	background-color: #333;
+	background-color: var(--text-secondary);
 }
 
 body.dark-mode .social-icon:hover {
