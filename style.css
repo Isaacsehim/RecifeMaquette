@@ -62,9 +62,9 @@ p,
 	top: -2px;
 	width: 100%;
 	background-color: var(--light-gray);
-	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.2),
+	box-shadow: inset 0 -1px 0 rgba(142, 37, 37, 0.2),
 		inset 0 1px 0 rgba(0, 0, 0, 0.1);
-	padding: 5rem 5%;
+	padding: 1%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -728,7 +728,7 @@ footer .footer-column p {
 /* For small laptops (1366x768, 1280x720, 1280x960) */
 @media (min-width: 1200px) and (max-width: 1399px) {
 	.navbar {
-		padding: 2rem 4%;
+		padding: 1%;
 	}
 
 	.hero {
@@ -762,7 +762,7 @@ footer .footer-column p {
 /* For tablets and small laptops (1024x768) */
 @media (min-width: 992px) and (max-width: 1199px) {
 	.navbar {
-		padding: 0.8rem 3%;
+		padding: 1%;
 	}
 
 	.nav-links {
@@ -800,7 +800,7 @@ footer .footer-column p {
 /* For tablets (768px-991px) */
 @media (min-width: 768px) and (max-width: 991px) {
 	.navbar {
-		padding: 0.6rem 2%;
+		padding: 1%;
 	}
 
 	.nav-links {
@@ -843,7 +843,7 @@ footer .footer-column p {
 /* For mobile devices (430x932, 393x873, 390x844, 384x832) */
 @media (min-width: 380px) and (max-width: 767px) {
 	.navbar {
-		padding: 0.5rem 2%;
+		padding: 10%;
 	}
 
 	div .logo img {
@@ -910,7 +910,7 @@ footer .footer-column p {
 /* For very small mobile devices (< 380px) */
 @media (max-width: 379px) {
 	.navbar {
-		padding: 0.5rem 1%;
+		padding: 10%;
 	}
 
 	div .logo img {
