@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECIFE - Centre de Formation en Langues</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+    <!-- Navigation Bar -->
+    <nav class="navbar"> 
+        <div class="logo-space">
+            <div class="logo"><img src="img/LogoRecife.png" alt="Logo RECIFE"></div>
+        </div>
+        <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="#"><i class="fas fa-users"></i> Qui Sommes-Nous ?</a></li>
+            <li><a href="#"><i class="fas fa-certificate"></i> Nos Formations</a></li>
+            <li><a href="#"><i class="fas fa-graduation-cap"></i> Diplômes et Examens</a></li>
+        </ul>
+    
+        <!-- Séparé du reste -->
+        <div class="floating-buttons">
+            <button class="btn btn-search"><i class="fas fa-search"></i></button>
+            <button class="btn btn-contact"><i class="fas fa-envelope"></i></button>
+            <button class="btn btn-translate"><i class="fas fa-language"></i></button>
+            <button id="darkModeToggle" class="btn btn-translate"><i class="fas fa-moon"></i></button>
+            <button class="btn btn-login"><i class="fas fa-user"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>RECIFE Formation</h1>
+        <p>Centre de formation spécialisé dans l'enseignement des langues étrangères et du français langue étrangère (FLE)</p>
+        <div class="hero-buttons">
+            <button class="btn btn-primary"><i class="fas fa-book-open"></i> Découvrir nos formations</button>
+            <button class="btn btn-secondary"><i class="fas fa-envelope"></i> Nous contacter</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-card purple">
+            <div class="feature-icon"><i class="fas fa-user-tie"></i></div>
+            <h3>Une équipe pédagogique professionnelle</h3>
+            <p>Notre équipe de professeurs expérimentés et diplômés vous garantit un enseignement de qualité, adapté à vos besoins spécifiques et à votre niveau.</p>
+        </div>
+        <div class="feature-card orange">
+            <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+            <h3>Centre d'examens agréé</h3>
+            <p>RECIFE est centre d'examens agréé par les organismes certificateurs FRANCE ÉDUCATION INTERNATIONALE, CAMBRIDGE, BRIGHT, LINGUASKILL et LILATE.</p>
+        </div>
+        <div class="feature-card turquoise">
+            <div class="feature-icon"><i class="fas fa-wallet"></i></div>
+            <h3>Formations éligibles au CPF</h3>
+            <p>La plupart de nos formations en langues sont éligibles au Compte Personnel de Formation (CPF), facilitant ainsi votre accès à nos services.</p>
+        </div>
+    </section>
+
+    <!-- Formations Section -->
+    <section class="formations">
+        <div class="section-header">
+            <h2><i class="fas fa-language"></i> Nos Formations en Langues</h2>
+            <p class="subtitle">Des formations adaptées à tous les niveaux et tous les objectifs</p>
+        </div>
+        <div class="formation-cards">
+            <div class="formation-card">
+                <div class="formation-img" id="formation-1"><i class="fas fa-globe" style="font-size: 4rem; color: var(--primary-gray);"></i></div>
+                <div class="formation-content">
+                    <h3><i class="fas fa-comment-dots"></i> Cours de Langues Étrangères</h3>
+                    <p>Anglais, Espagnol, Allemand, Italien, Portugais, Chinois, Japonais, Arabe, Coréen et bien d'autres, adaptés à tous les niveaux.</p>
+                    <a href="#" class="btn-outline"><i class="fas fa-arrow-right"></i> En savoir plus</a>
+                </div>
+            </div>
+            <div class="formation-card">
+                <div class="formation-img" id="formation-2"><i class="fas fa-flag" style="font-size: 4rem; color: var(--primary-gray);"></i></div>
+                <div class="formation-content">
+                    <h3><i class="fas fa-book"></i> Français Langue Étrangère (FLE)</h3>
+                    <p>Cours de français pour les non-francophones, du niveau débutant au niveau avancé, avec préparation aux examens officiels.</p>
+                    <a href="#" class="btn-outline"><i class="fas fa-arrow-right"></i> En savoir plus</a>
+                </div>
+            </div>
+            <div class="formation-card">
+                <div class="formation-img" id="formation-3"><i class="fas fa-briefcase" style="font-size: 4rem; color: var(--primary-gray);"></i></div>
+                <div class="formation-content">
+                    <h3><i class="fas fa-building"></i> Formations Professionnelles</h3>
+                    <p>Formations adaptées au monde de l'entreprise, avec des modules spécifiques à votre secteur d'activité et à vos besoins professionnels.</p>
+                    <a href="#" class="btn-outline"><i class="fas fa-arrow-right"></i> En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certification-section">
+        <div class="section-header">
+            <h2><i class="fas fa-award"></i> Certifications et Examens</h2>
+            <p class="subtitle">Obtenez une certification reconnue internationalement</p>
+        </div>
+        <div class="certification-cards">
+            <div class="certification-card">
+                <div class="certification-icon"><i class="fas fa-medal"></i></div>
+                <h3>DILF - DELF - DALF</h3>
+                <p>Diplômes officiels délivrés par le ministère français de l'Éducation nationale pour certifier les compétences en français des candidats étrangers.</p>
+            </div>
+            <div class="certification-card">
+                <div class="certification-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>Cambridge English Qualifications</h3>
+                <p>Certifications d'anglais reconnues par les établissements d'enseignement, les employeurs et les organisations gouvernementales du monde entier.</p>
+            </div>
+            <div class="certification-card">
+                <div class="certification-icon"><i class="fas fa-check-circle"></i></div>
+                <h3>Bright Language / Linguaskill</h3>
+                <p>Tests d'évaluation linguistique qui mesurent vos compétences linguistiques pour les besoins professionnels et vous permettent d'obtenir une certification reconnue.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners">
+        <div class="section-header">
+            <h2><i class="fas fa-handshake"></i> Nos Partenaires</h2>
+            <p class="subtitle">Ils nous font confiance</p>
+        </div>
+        <div class="partner-logos">
+            <div class="partner-logo">France Éducation</div>
+            <div class="partner-logo">Cambridge</div>
+            <div class="partner-logo">Bright Language</div>
+            <div class="partner-logo">Linguaskill</div>
+            <div class="partner-logo">LILATE</div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <h2><i class="fas fa-rocket"></i> Votre réussite est notre priorité</h2>
+        <p>Nos formations sont éligibles au CPF, OPCO, Pôle Emploi et bien d'autres dispositifs de financement. Contactez-nous pour en savoir plus sur les possibilités qui s'offrent à vous.</p>
+        <button class="btn btn-primary"><i class="fas fa-file-alt"></i> Demander un devis personnalisé</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3><i class="fas fa-building"></i> RECIFE Formation</h3>
+                <p>Centre de formation spécialisé dans l'enseignement des langues étrangères depuis plus de 20 ans. Formations pour particuliers et professionnels.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3><i class="fas fa-link"></i> Liens Rapides</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Accueil</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Qui Sommes-Nous ?</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Nos Formations</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Diplômes et Examens</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> CPF</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3><i class="fas fa-language"></i> Nos Langues</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Anglais</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Français - FLE</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Espagnol</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Allemand</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Italien</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Autres langues</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3><i class="fas fa-envelope"></i> Contact</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> 45 Rue d'Iéna, 76600 Le Havre</li>
+                    <li><i class="fas fa-phone"></i> 02 35 24 68 68</li>
+                    <li><i class="fas fa-envelope"></i> contact@recife-formation.fr</li>
+                    <li><i class="fas fa-clock"></i> Lun-Ven: 8h30-12h30, 13h30-17h</li>
+                </ul>
+                <div class="back-to-top">
+                    <a href="#top" id="scrollToTop" aria-label="Remonter en haut">
+                      <i class="fas fa-arrow-up"></i>
+                    </a>
+                  </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 RECIFE Formation. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
