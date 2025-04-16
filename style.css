@@ -342,7 +342,7 @@ p,
 
 .formation-img#formation-1 {
 	height: 200px;
-	background-image: url('../img/photo2.jpg');
+	background-image: url('./img/photo2.jpg');
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -352,7 +352,7 @@ p,
 
 .formation-img#formation-2 {
 	height: 200px;
-	background-image: url('../img/photo3.jpg');
+	background-image: url('./img/photo3.jpg');
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -362,7 +362,7 @@ p,
 
 .formation-img#formation-3 {
 	height: 200px;
-	background-image: url('../img/photo4.jpg');
+	background-image: url('./img/photo4.jpg');
 	background-size: cover;
 	background-position: center;
 	display: flex;
